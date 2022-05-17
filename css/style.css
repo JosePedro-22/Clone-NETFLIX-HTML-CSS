@@ -1,0 +1,244 @@
+*{
+  margin:0;
+  padding: 0;
+}
+body{
+  font-family: sans-serif;
+  color:white;
+}
+
+img{
+  display: block;
+  max-width: 100%; 
+}
+.container{
+  max-width:1130px;
+  margin: 0 auto;
+}
+.header{
+  position: absolute;
+  z-index: 100;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1790px;
+  top:28px;
+  left:56px;
+}
+
+.header a {
+  display: inline-block; 
+  color: #fff;
+  align-self: flex-start;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: #e50914;
+  line-height: normal;
+  padding: 7px 17px;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.main{
+  height: 785px;
+  background: url('../img/bg.jpg') center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.main h1{
+  font-size: 65px;
+  max-width: 700px;
+  text-align: center;
+
+}
+.main span{
+  font-size: 26px;
+  margin:10px;
+  font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+
+}
+
+.main p{
+  font-size: 19px;
+  font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  padding: 10px;
+}
+
+.form-cta{
+  display: grid;
+  grid-template-columns: 400px 250px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.form-cta input{ 
+  padding: 20px;
+  font-size: 18px;
+  font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+
+}
+
+.form-cta button{
+  background-color:#e50914;
+  outline: none;
+  border:none;
+  color:white;
+  font-size: 28px;
+}
+
+.form-cta button:after{
+  content: "";
+  display:  inline-block;
+  width: 10px;
+  height: 20px;
+  background: url('../img/seta.svg') no-repeat;
+  margin-left: 20px;
+}
+
+.form-cta button:hover{
+  background-color:#e04612;
+  
+}
+.gradient{
+  background-color: rgba(0,0,0,0.4);
+  background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0)60%,
+  rgba(0,0,0,.8)100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.main-child{
+  padding-top: 4rem;
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+  box-sizing: border-box;
+}
+
+.section{
+  background-color: black;
+  padding: 4rem 0;
+  width: auto;
+  height: auto;
+  border-top: 8px solid #222;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+}
+
+.img-tv{
+  display: flex;
+  position: relative;
+}
+
+.img-tv img {
+  position: relative;
+  z-index: 1;         
+}
+.video-tv{
+  display: flex;
+  position: absolute; 
+  left: 71px;
+  top: 80px;
+  width: 400px;
+}
+
+.section h1{
+  font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: #fff;
+  font-size: 50px;
+  margin-bottom: 16px;
+}
+
+.section p{
+  font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: #fff;
+  font-size: 26px;
+}
+
+.download .grid > div:first-child{
+  order: 2;
+}
+.download .img-tv{
+  order: 1;
+
+}
+
+.img-imac{
+  position: relative;
+}
+
+
+.img-imac img {
+  display: flex;
+  position: relative;
+  z-index: 1;         
+}
+
+.video-imac{
+  display: flex;
+  position: absolute; 
+  left: 90px;
+  top: 45px;
+  width: 350px;
+}
+
+.form-rodape .form-cta{
+  margin-top:0;
+}
+.form-rodape{
+  background-color: black;
+  text-align: center;
+  border: 8px solid #222;
+  display: grid;
+  justify-items: center;
+}
+
+.form-rodape p{
+  padding:10px; 
+  font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: #757575;
+  font-size: 15px;
+}
+
+
+
+.section .container .borde-stranger{
+  background-color: black;
+  width: 330px;
+  height: 90px;
+  border: 2px solid #222;
+  border-radius: 20px;
+  z-index: 1;
+  display: flex;
+  position: absolute;
+  top: 325px;
+  left: 130px;
+}
+
+.section .container .borde-stranger img {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  height: 60px;  
+  top: 13px;
+  left: 10px
+}
+.section .container .borde-stranger p{
+  display: flex;
+  position: relative;
+  z-index: 1;
+  font-size: 17px;  
+  top: 35px;
+  left: 15px
+}
